@@ -1,1 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting Banner Page</title>
+</head>
+<style>
+  *{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.main{
+    width: 100%;
+    height: 87vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffe5ec;
+}
+.banner {
+  display: flex;
+  background-color: #ffe5ec;
+}
 
+.banner-text {
+  flex: 1;
+  text-align: right;
+}
+.overlay{
+  border-top: 500px solid #ffb3c6;
+  border-right: 500px solid transparent;
+  border-bottom: 500px solid #ffb3c6;
+  border-left: 500px solid #ffb3c6;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+body{
+    background: linear-gradient(0deg, #fb6f92, #ffe5ec);
+    
+}
+nav{
+    width: 90%;
+    position: sticky;
+    margin-left: 20px auto;
+    margin-right: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 200px;
+}
+.slogan img{
+    width: 350px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+nav ul li {
+    color:transparent;
+}
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+}
+.banner{
+
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative; 
+    margin-top: 10vh;
+}
+  .banner:hover::before {
+    opacity: 0.5;
+  }
+  
+  .banner-text {
+    color:#f63190;
+    padding: 20px;
+    text-align: center;
+    max-width: 1000px;
+    position: relative; 
+    z-index: 1; 
+  }
+
+  
+  h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 24px;
+    margin: 10px 0 0 0;
+  }
+  
+  .btn-learn-more {
+    background-color:#fb6f92;
+    border-radius: 10%;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-learn-more:hover {
+    background-color: #ffe5ec;
+    color: #000;
+  }
+
+.second{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(0deg, #ffc2d1, #fb6f92)
+}
+
+.posters {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  .posters ul {
+    margin: 20px auto;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .posters ul li {
+    color: transparent;
+    text-decoration-color: white;
+    text-align: center;
+  }
+  
+  .posters img {
+    width: 350px;
+  }
+  
+  .posters li img {
+    width: 350px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .posters li img:hover {
+    transform: scale(1.1);
+  }
+  
+  .image-wrapper {
+    position: relative;
+  }
+  
+  .image-wrapper p {
+    position: absolute;
+    width: 340px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  footer {
+    background-color: #f8f8f8;
+    padding: 30px 0;
+    color: #777;
+    font-size: 14px;
+  }
+
+  .content {
+    padding:3%;
+    margin-left: 400px;
+  }
+  
+  footer h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #777;
+  }
+  
+  footer p {
+    line-height: 24px;
+    color: #777;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  footer ul li a {
+    color: #777;
+    font-size: 18px;
+  }
+  
+  footer ul li a:hover {
+    color: #777;
+  }
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="slogan">
+                <img src="SAS_slogan.png">
+            </div>
+            <div class="nav-links"></div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Contact info</a></li>
+                </ul>
+        </nav>
+    </header>
+    <div class="main">
+      <div class="banner">
+        <div class="overlay"></div>
+        <div class="banner-text">
+            <h1>WELCOME TO THE MARKETING TEAM AT SIPS AND SWEETS</h1>
+            <p align="justify-content">As the premier purveyor of delectable pastries and beverages, we at Sips n Sweets take great pride in the quality of our products. Our marketing team is responsible for ensuring that our brand stands out and that our offerings are top-of-mind among food and beverage enthusiasts everywhere.</p>
+            <p align="justify-content">Our team of experienced marketers specializes in creating and implementing innovative marketing strategies that not only showcase our pastries and beverages, but also convey the unique experience that comes with enjoying them. From targeted social media campaigns to engaging in-store promotions, we work tirelessly to ensure that our customers keep coming back for more.</p>
+            <p align="justify-content">At Sips n Sweets, we understand that effective marketing is key to success in the competitive food and beverage landscape. That's why we're dedicated to providing our customers with the highest-quality pastries and beverages, and to promoting our brand through innovative and engaging marketing initiatives.</p>
+            <br>
+            <a href="#" class="btn-learn-more">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+    <div class = "second">
+
+        <div class="posters">
+            <ul>
+              <li>
+                <div class="image-wrapper">
+                  <img src="poster1.jpg">
+                  <p>Team Members</p>
+                </div>
+              </li>
+              <li>
+                <div class="image-wrapper">
+                  <img src="poster2.png">
+                  <p>Services </p>
+                </div>
+              </li>
+              <li>
+                <div class="image-wrapper">
+                  <img src="poster3.jpg">
+                  <p>About Us</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="posters">
+            <ul>
+              <li>
+                <div class="image-wrapper">
+                  <img src="poster4.jpg">
+                  <p>Feedbacks</p>
+                </div>
+              </li>
+              <li>
+                <div class="image-wrapper">
+                  <img src="poster5.jpg">
+                  <p>Blog </p>
+                </div>
+              </li>
+              <li>
+                <div class="image-wrapper">
+                  <img src="poster6.jpeg">
+                  <p>Experience and Efficiency</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="content">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Contact Us</h3>
+              <p>123 Main Street<br>
+                 Imus, Cavite<br>
+                 Phone: (123) 456-7890<br>
+                 Email: info@example.com</p>
+            </div>
+            <div class="col-md-6">
+              <h3>Connect With Us</h3>
+              <ul class="list-inline">
+                <li>facebook: <a href="#">Sips and Sweets<i class="fa fa-facebook"></i></a></li><br>
+                <li>Twitter: <a href="#">@SipsAndSweets<i class="fa fa-twitter"></i></a></li><br>
+                <li>Instagram: <a href="#">@SipsAndSweets<i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </footer>
+</body>
+</html>
